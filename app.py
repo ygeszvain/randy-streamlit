@@ -17,11 +17,13 @@ st.set_page_config(
 menu = st.sidebar.radio(
     "",
     ["Intro",
-     "Data",
-     "Variables",
-     'Other variables',
-     "Relational variables",
-     "Correlations"],
+     "Data"
+     # ,
+     # "Variables",
+     # 'Other variables',
+     # "Relational variables",
+     # "Correlations"
+     ],
 )
 
 st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)

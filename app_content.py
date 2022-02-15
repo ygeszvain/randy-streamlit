@@ -1031,19 +1031,19 @@ def set_data():
 
     st.title('Data')
     st.write(dataset_intro, unsafe_allow_html=True)
-    col1, col2 = st.columns(2)
-
-    with col1:
-        st.markdown('### Nº de películas en IMDb')
-        st.markdown('117.482 páginas de películas (2014-2020) escrapeadas del portal IMDb')
-        st.markdown(' ')
-        st.write(bars_nmovies_imdb())
-
-    with col2:
-        st.markdown('### Nº de películas de IMDb filtradas')
-        st.markdown(
-            'Datos resultantes tras filtrar las películas con rating, metascore, presupuesto o recaudación. 1.553 películas')
-        # st.write(bars_nmovies(customers))
+    # col1, col2 = st.columns(2)
+    #
+    # with col1:
+    #     st.markdown('### Nº de películas en IMDb')
+    #     st.markdown('117.482 páginas de películas (2014-2020) escrapeadas del portal IMDb')
+    #     st.markdown(' ')
+    #     st.write(bars_nmovies_imdb())
+    #
+    # with col2:
+    #     st.markdown('### Nº de películas de IMDb filtradas')
+    #     st.markdown(
+    #         'Datos resultantes tras filtrar las películas con rating, metascore, presupuesto o recaudación. 1.553 películas')
+    #     # st.write(bars_nmovies(customers))
 
     st.markdown('### DataFrame `articles`')
     st.markdown(
