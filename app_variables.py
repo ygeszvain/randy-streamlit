@@ -1,9 +1,16 @@
-path_customers = './data/customers.csv'
-path_articles = './data/articles.csv'
+path_AnnualTicketSales = './data/hollywood/AnnualTicketSales.csv'
+path_HighestGrossers = './data/hollywood/HighestGrossers.csv'
+path_PopularCreativeTypes = './data/hollywood/PopularCreativeTypes.csv'
+path_TopDistributors = './data/hollywood/TopDistributors.csv'
+path_TopGenres = './data/hollywood/TopGenres.csv'
+path_TopGrossingRatings = './data/hollywood/TopGrossingRatings.csv'
+path_TopGrossingSources = './data/hollywood/TopGrossingSources.csv'
+path_TopProductionMethods = './data/hollywood/TopProductionMethods.csv'
+path_WideReleasesCount = './data/hollywood/WideReleasesCount.csv'
 
 intro = '''
-# H&M Personalized Fashion Recommendations EDA
-This Streamlit app aims to provide data insight for [H&M Personalized Fashion Recommendations competition](https://www.kaggle.com/c/h-and-m-personalized-fashion-recommendations/overview) hosted on [Kaggle](https://www.kaggle.com/).
+# Hollywood Theatrical Market Synopsis 1995 to 2021 EDA
+This Streamlit app aims to provide data insight for [Hollywood Theatrical Market Synopsis 1995 to 2021](https://www.kaggle.com/johnharshith/hollywood-theatrical-market-synopsis-1995-to-2021) hosted on [Kaggle](https://www.kaggle.com/).
 '''
 
 
@@ -17,8 +24,18 @@ intro_context = '''
 '''
 
 dataset_intro = '''
-There are two data sets - customers and articles.  
-Here, we only work on EDA for articles csv file because of the file size limit.
+There are 9 datasets:
+1. AnnualTicketSales  
+2. HighestGrossers  
+3. PopularCreativeTypes  
+4. TopDistributors
+5. TopGenres
+6. TopGrossingRatings
+7. TopGrossingSources
+8. TopProductionMethods
+9. WideReleasesCount.  
+  
+## Below presents a glance into all the datasets
 '''
 
 
