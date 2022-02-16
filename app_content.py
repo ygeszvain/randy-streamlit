@@ -7,7 +7,7 @@ import plotly.express as px
 import plotly.figure_factory as ff
 import plotly.graph_objs as go
 import streamlit as st
-
+import seaborn as sns
 from app_variables import *
 
 
@@ -1050,6 +1050,16 @@ def set_data():
         'detailed metadata for each article_id available for purchase.')
     st.markdown(f'{len(articles.index)} entries  |  {len(articles.columns)} columns')
     st.write(articles)
+
+    st.markdown('### Explore data by counts')
+    # st.markdown(
+    #     'detailed metadata for each article_id available for purchase.')
+    st.markdown("### **Select data group:**")
+    select_datagroup = [st.selectbox('', ['product_type_name', 'colour_group_name'])]
+
+    fig = plt.figure(figsize=(10, 20))
+    sns.countplot(y=select_datagroup, data=articles)
+    st.pyplot(fig)
 
 
 def set_variables():

@@ -14,8 +14,8 @@ st.set_page_config(
 # st.sidebar.header('Menu')
 # st.sidebar.markdown('options')
 
-menu = st.sidebar.radio(
-    "",
+menu = st.sidebar.selectbox(
+    "Select from the dropdown menu to explore",
     ["Intro",
      "Data"
      # ,
