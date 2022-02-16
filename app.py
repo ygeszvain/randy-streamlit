@@ -17,12 +17,8 @@ st.set_page_config(
 menu = st.sidebar.selectbox(
     "Select from the dropdown menu to explore",
     ["Intro",
-     "Data"
-     # ,
-     # "Variables",
-     # 'Other variables',
-     # "Relational variables",
-     # "Correlations"
+     "Data Preview",
+     "Data Profiler"
      ],
 )
 
@@ -30,13 +26,9 @@ st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', uns
 
 if menu == 'Intro':
     set_home()
-elif menu == 'Data':
+elif menu == 'Data Preview':
     set_data()
-elif menu == 'Variables':
-    set_variables()
-elif menu == 'More variables':
-    set_otras_variables()
-elif menu == 'Relationships':
-    set_relations()
-elif menu == 'Correlation':
-    set_arrays()
+elif menu == 'Data Profiler':
+    set_data_profiler()
+elif menu == 'Data - value count':
+    set_data_value_count()
